@@ -27,3 +27,15 @@ def get_secret(encrypted_secret):
     password = os.environ['TOP_SECRET_PASSWORD']
     return privy.peek(encrypted_secret, password)
 ```
+
+## Using FreeDesktop.org Secret Service standard
+
+https://pypi.org/project/keyring/
+
+
+https://pypi.org/project/SecretStorage/
+It uses D-Bus-based FreeDesktop.org Secret Service standard that is, for example, supported by GNOME Keyring (since version 2.30), KWallet (since version 5.97) and KeePassXC.
+https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.search_items
+
+
+https://gnome.pages.gitlab.gnome.org/libsecret/libsecret-python-examples.html
