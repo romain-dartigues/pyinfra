@@ -127,6 +127,7 @@ if __name__ == "__main__":
                 "lxc = pyinfra.connectors.incus:LXCConnector",
                 # Inventory only connectors
                 "terraform = pyinfra.connectors.terraform:TerraformInventoryConnector",
+                "ansible = pyinfra.connectors.ansible:AnsibleInventoryConnector",
                 "vagrant = pyinfra.connectors.vagrant:VagrantInventoryConnector",
             ],
         },
